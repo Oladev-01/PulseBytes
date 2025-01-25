@@ -1,0 +1,83 @@
+.footers a{
+    list-style: none;
+}
+.footers-hold {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px;
+    background-color: black;
+    align-items: start;
+    margin-top: 60px;
+}
+.footers {
+    display: flex;
+    gap: 100px;
+}
+.footer-service, .footer-media, .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.footer-service span, .footer-media span, .footer-contact span {
+    font-weight: 500;
+}
+
+
+.footers ul{
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footers a, .footers li {
+    cursor: pointer;
+    transition: color 0.5s ease;
+    position: relative;
+    padding: 5px 25px 10px 0;
+    text-decoration: none;
+    color: var(--color-light);
+}
+.footers li:hover::after {
+  content: '\2192'; /* Unicode right arrow */
+  font-size: 16px; /* Adjust the size of the icon */
+  color: gold; /* Match the color of the text */
+  top: 48%; /* Center the icon vertically */
+    right: 0;
+    position: absolute;
+
+  transform: translateY(-50%); 
+  transition: all 0.5s ease;
+}
+.footers li:hover, .footers li a:hover {
+    color: gold;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 13px;
+    color: gray;
+    bottom: 0;
+}
+.footer-bottom li a {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+.footer-bottom li a:hover {
+    color: gold;
+}
+.footer-bottom ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 20px;
+}

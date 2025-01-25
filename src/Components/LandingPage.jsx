@@ -1,35 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/landingpage.css';
+import { Nav } from './nav';
+import { Footer } from './footer';
 
 export const LandingPage = () => {
-    const [isHidden, setIsHidden] = useState(true);
-    const currentYear = new Date().getFullYear();
-
-    const toggleMenu = () => {
-        setIsHidden(!isHidden);
-        console.log("Menu toggled:", isHidden);
-    };
 
     return (
         <div>
-            <nav className="project-nav">
-                <h2 className="pulse-bytes"><Link to="/" >
-                    PulseBytes.
-                </Link></h2>
-                <ul id="navlink" className={isHidden ? 'hidden' : ''}>
-                    <li><Link to="/home">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/services">Services</Link></li>
-                    {isHidden && (<li id='hidden-contact' ><Link to="/contact">Contact</Link></li>)}
-                </ul>
-                <Link to="/contact" id="contact">Contact</Link>
-                <div className="menu" id="Menu" onClick={toggleMenu}>
-                    <div className="menu-item"></div>
-                    <div className="menu-item"></div>
-                    <div className="menu-item"></div>
-                </div>
-            </nav>
+            <Nav /> 
             <div className='body'>
                 <div className="first-half">
                     <div className="first-half-left">
@@ -81,45 +60,7 @@ export const LandingPage = () => {
                     </div>
                 </div>
             </div>
-            <footer>
-                <div className='footers-hold'>
-                    <div className="footers">
-                        <div className="footer-service">
-                            <span>Services</span>
-                            <ul>
-                                <li><Link to="/e-commerce">E-commerce</Link></li>
-                                <li><Link to="">UI/UX Design</Link></li>
-                                <li><Link to="">Digital Marketing</Link></li>
-                                <li><Link to="">App Development</Link></li>
-                                <li><Link to="">Virtual Assistant</Link></li>
-                                <li><Link to="">Website Design</Link></li>
-                            </ul>
-                        </div>
-                        <div className="footer-media">
-                            <span>Social Media</span>
-                            <ul>
-                                <li>Instagram</li>
-                                <li>FaceBook</li>
-                            </ul>
-                        </div>
-                        <div className="footer-contact">
-                            <span>Contact Us</span>
-                            <ul>
-                                <li>email</li>
-                                <li>phone no</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="footer-bottom">
-                        <ul className='legal'>
-                            <li><Link to="">Legal</Link></li>
-                            <li><Link to="">Privacy</Link></li>
-                            <li><Link to="">Terms</Link></li>
-                        </ul>
-                        <p>&copy; {currentYear} PulseBytes Team.</p>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
         </div>
     );
 };
