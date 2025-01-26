@@ -1,0 +1,177 @@
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    background-color: white;
+}
+
+.about-header {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden; /* Ensures no extra space if image height is reduced */
+    width: 100%; /* Ensures full width */
+    height: 400px; /* Adjust height as desired */
+}
+
+.about-header img {
+    width: 100%;
+    height: 100%; /* Forces image to fit the height of the container */
+    object-fit: cover; /* Ensures image is cropped properly to fit */
+}
+
+.abt-hero {
+    position: absolute;
+    top: 50%; /* Vertically center the text */
+    left: 45%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Center align */
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: start;
+    /* background: rgba(78, 78, 78, 0.5); */
+    padding: 0;
+    border-radius: 8px; /* Rounded corners for the text background */
+}
+
+.abt-hero h1 {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+.abt-hero p {
+    text-align: start;
+}
+.abt-hero span a {
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgb(206, 253, 81);
+    color: black;
+    transition: background-color 0.5s ease;
+}
+.abt-hero span a:hover {
+    background-color: rgba(81, 241, 253, 0.952);
+}
+.abt-hero span {
+    margin-top: 30px;
+}
+
+.abt-history {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 40px auto;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    width: 80%;
+    border-radius: 8px;
+}
+.abt-history h2 {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.abt-history p {
+    font-weight: 500;
+    margin-top: 0;
+}
+.abt-history p:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.abt-history-mission {
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-start; /* Align the content to the start */
+    justify-content: flex-start; 
+    gap: 30px; /* Add some space between the line bar and the content */
+}
+
+.line-bar {
+    width: 15px; /* Length of the line bar */
+    height: 200px; /* Height of the line */
+    background-color: red; /* Color of the line */
+    margin-top: 0; /* Align it with the top of the content */
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.history-mission {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.history-mission p {
+    font-size: 1.5rem; /* Adjust the font size */
+    font-weight: 700;
+    color: #333; /* Set a readable color */
+    line-height: 1.5; /* Add line height for better readability */
+    text-align: start;
+    transform: translateY(-25px); /* Move the text up */
+}
+
+.history-mission span a {
+    font-size: 1.1rem;
+    color: white; /* Link color */
+    padding: 10px 20px;
+    background-color: red;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.history-mission span {
+    margin-top: 15px;
+
+}
+
+.abt-mission {
+    background-color: var(--color-dark);
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px;
+}
+li {
+    list-style: none;
+}
+.abt-mission h2 {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+.abt-mission p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.abt-mission-values {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    margin-top: 40px;
+}
+
+.abt-mission-values ul {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+.abt-mission-values li {
+    text-align: start;
+}
