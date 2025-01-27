@@ -7,7 +7,7 @@ import { Footer } from './footer';
 export const LandingPage = () => {
 
     return (
-        <div>
+        <div className='home'>
             <Nav /> 
             <div className='body'>
                 <div className="first-half">
