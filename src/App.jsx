@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { LandingPage } from './Components/LandingPage'
+import LandingPage from './Components/LandingPage'
 import { About } from './Components/About'
 import { Services } from './Components/Services'
+import Contact from './Components/contact';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Router>
@@ -14,6 +13,7 @@ function App() {
         <Route path='/' element={<LandingPage />} />
         <Route path='/about' element={<About />} />
         <Route path='/services' element={<Services/>}/>
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </Router>
   )

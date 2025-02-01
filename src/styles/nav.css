@@ -1,13 +1,16 @@
-.project-nav {
+.project-nav, .contact-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 90px;
     padding: 20px 20px;
     top: auto;
     z-index: 1;
     background-color: var(--color-dark);
-
+}
+.contact-nav {
+    justify-content: flex-start;
+    gap: 400px;
 }
 
 .project-nav li {
@@ -33,13 +36,34 @@
     font-size: 17px;
     font-weight: 300;
 }
+.contact-nav #navlink {
+    width: 80%;
+    align-items: start;
+    justify-content: space-between;
+}
+.contact-nav #navlink #navlink-home {
+    display: none;
+}
 #navlink li a {
     transition: color 0.5s ease;
 }
 #navlink li a:hover {
     color: gold;
 }
+.contact-nav #navlink li a {
+    padding: 10px 30px;
+    background-color: rgb(81, 181, 253);
+    border-radius: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-dark);
+    transition: background-color 0.5s ease;
 
+}
+
+.contact-nav #navlink li a:hover {
+    background-color: rgb(96, 237, 247);
+}
 #contact {
     padding: 20px 50px;
     background-color: rgb(206, 253, 81);
@@ -50,6 +74,9 @@
 }
 #contact:hover {
     background-color: rgb(151, 202, 9);;
+}
+.contact-nav #contact {
+    display: none;
 }
 .menu {
     display: none;

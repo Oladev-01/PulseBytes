@@ -1,11 +1,51 @@
-body {
-    width: 100%;
-}
-
-.services {
+.services-body {
     display: flex;
     flex-direction: column;
+}
+
+.service-hero-section {
+    margin: 0;
     width: 100%;
-    height: 100vh;
-    background-color: red;
+    height: auto;
+    padding: 0;
+    /* position: relative; */
+}
+
+.service-hero-section video {
+    width: 100%;
+    height: 800px;
+    border-radius: 0;
+    object-fit: cover;
+    z-index: -3;
+}
+
+.service-hero-text {
+    position: absolute;
+    top: 70%; 
+    left: 42%;
+    transform: translate(-50%, -50%);
+    color: rgb(206, 253, 81);
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    display: flex;
+    width: 80%;
+    gap: 40px;
+    flex-direction: column;
+    align-items: start;
+}
+
+.service-hero-text p {
+    font-size: 2.8rem;
+}
+.service-hero-text a {
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgb(206, 253, 81);
+    color: black;
+    transition: background-color 0.5s ease;
+}
+.service-hero-text a:hover {
+    background-color: rgba(81, 241, 253, 0.952);
 }

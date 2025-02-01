@@ -1,0 +1,90 @@
+/* General styling for the Digital Marketing section */
+.service-page {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Title and Description Styling */
+  .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin-left: auto;
+    font-weight: 600;
+    margin-right: auto;
+  }
+  
+  /* Card Layout Styling */
+  .services-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: top;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Image Placeholder Styling */
+  .service-icon {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Title Styling */
+  .service-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Description Styling */
+  .service-description  {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* Link Styling */
+  .service-link, .service-link1 {
+    text-decoration: none;
+    color: #ee0d6f;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .service-link:hover {
+    color: #45a049;
+  }
+  
+  .service-link1 {
+    color: blue;
+  }
+  .service-link1:hover {
+    color: red;
+  }

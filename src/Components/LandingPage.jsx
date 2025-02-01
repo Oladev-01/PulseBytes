@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/landingpage.css';
 import { Nav } from './nav';
 import { Footer } from './footer';
 
-export const LandingPage = () => {
+function LandingPage() {
 
     return (
         <div className='home'>
@@ -23,13 +22,14 @@ export const LandingPage = () => {
                 </div>
                 <div className="second-half">
                     <span id='second-half-service'>SERVICES</span>
-                    <div className="services">
+                    <div className="service">
                         <div className="first-service">
                             <div>
                                 <span className='title'>Digital Marketing</span>
                                 <p>
                                     We craft powerful digital marketing strategies that resonate with your audience, driving meaningful engagement and measurable results. From social media campaigns to targeted advertising, we help your brand stand out in the crowded digital space, ensuring your message reaches the right people at the right time.
-                                </p></div>
+                                </p>
+                            </div>
                             <div>
                                 <span className='title'>Website Design and Development</span>
                                 <p>Transform your online presence with visually stunning and highly functional websites designed to captivate and convert. Our expert team creates custom websites that are user-friendly, mobile-responsive, and optimized for search engines, ensuring your brand leaves a lasting impression.</p>
@@ -48,9 +48,9 @@ export const LandingPage = () => {
                             </div>
                         </div>
                         <div className="third-service">
-                            <div>
+                            <div >
                                 <span className='title'> Virtual Assistant Services</span>
-                                <p>Streamline your operations and boost productivity with our reliable virtual assistant services. From administrative support to customer engagement, we provide skilled professionals to handle your day-to-day tasks, giving you more time to focus on growing your business.</p>
+                                <p>Streamline operations and boost productivity with our reliable virtual assistant services. From administrative support to customer engagement, we provide skilled professionals to handle daily tasks, giving you more time to focus on growing your business.</p>
                             </div>
                             <div>
                                 <span className='title'>E-commerce Store Design</span>
@@ -64,3 +64,5 @@ export const LandingPage = () => {
         </div>
     );
 };
+
+export default LandingPage;

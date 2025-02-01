@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/about.css';
+import styles from '../styles/About.module.css';
 import { Nav } from './nav';
 import { Footer } from './footer';
-import aboutImage from '../assets/pbytes-abt.jpg';
 
 export const About = () => {
 
@@ -39,12 +38,12 @@ export const About = () => {
     };
 
     return (
-        <div className="about">
+        <div className={styles.about}>
             <Nav />
-            <div className="body">
-                <header className="about-header">
-                    <img src={aboutImage} alt="About PulseBytes" />
-                    <div className="abt-hero">
+            <div className={styles.serviceBody}>
+                <div className={styles.aboutHeader}>
+                    <img src="./src/assets/pbytes-abt.jpg" alt="About PulseBytes" />
+                    <div className={styles.abtHero}>
                         <h1>About Us</h1>
                         <p>
                             Empowering businesses with innovative digital solutions, PulseBytes is your trusted partner for modern web development, data analytics, and seamless technology integration.
@@ -53,8 +52,8 @@ export const About = () => {
                             <Link to="/contact">Contact us</Link>
                         </span>
                     </div>
-                </header>
-                <section className="abt-history">
+                </div>
+                <section className={styles.abtHistory}>
                     <h2>Our History</h2>
                     <p>PulseBytes Digital Solutions was established in [Year] with the vision of empowering businesses through innovative technology. From humble beginnings, PulseBytes started as a small team of tech enthusiasts dedicated to delivering bespoke web development services to local businesses.</p>
 
@@ -68,9 +67,9 @@ export const About = () => {
 
                     <p>We specialize in crafting tailored digital solutions, whether you need a fully customized website, data-driven analytics, seamless technology integration, or a reliable virtual assistant to enhance productivity. Our solutions ensure your business stays ahead of the competition while streamlining operations and maximizing efficiency.</p>
 
-                    <div className="abt-history-mission">
-                        <div className="line-bar"></div>
-                        <div className="history-mission">
+                    <div className={styles.abtHistoryMission}>
+                        <div className={styles.lineBar}></div>
+                        <div className={styles.historyMission}>
                             <p>We create custom digital solutions, including websites, data analytics, technology integration, and virtual assistants, to boost productivity and keep your business ahead of the competition.</p>
                             <span>
                                 <Link to="/contact">Contact us</Link>
@@ -78,14 +77,14 @@ export const About = () => {
                         </div>
                     </div>
                 </section>
-                <section className="abt-mission">
+                <section className={styles.abtMission}>
                     <h2>Our Mission</h2>
                     <p>
                         Our mission at PulseBytes Digital Solutions is to empower businesses by delivering innovative, tailored digital solutions that drive growth, efficiency, and competitive advantage. We specialize in crafting custom websites, leveraging data-driven analytics, integrating cutting-edge technologies, and providing seamless virtual assistant services to enhance productivity. Through our commitment to excellence, we bridge the gap between traditional systems and modern tools, enabling our clients to thrive in an ever-evolving digital landscape. At PulseBytes, we are dedicated to transforming ideas into impactful solutions that make a meaningful difference for businesses worldwide.</p>
 
-                    <div className="abt-mission-values">
+                    <div className={styles.abtMissionValues}>
                         <h2>Our Core Values</h2>
-                        <div className="core-values">
+                        <div className={styles.coreValues}>
                             <ul>
                                 <li><strong>Innovation:</strong> We embrace creativity and cutting-edge technologies to craft unique digital solutions tailored to your business needs.</li>
                                 <li><strong>Client-Centricity:</strong> Your success is our priority. We listen, understand, and deliver solutions that align with your goals.</li>
@@ -100,86 +99,87 @@ export const About = () => {
 
                     </div>
                 </section>
-                <section className="testimonials">
+                <section className={styles.testimonials}>
                     <h2>What Our Clients Say</h2>
-                    <div className="testimonial-container">
-                        <div className="testimonial">
+                    <div className={styles.testimonialContainer}>
+                        <div className={styles.testimonial}>
                             <p>"PulseBytes transformed our business! Their tailored web solutions and data analytics have taken our operations to the next level. Highly recommend their services!"</p>
                             <span>- Jane Doe, CEO of TechWave Solutions</span>
                         </div>
-                        <div className="testimonial">
+                        <div className={styles.testimonial}>
                             <p>"The virtual assistant services provided by PulseBytes have significantly boosted our productivity. Their attention to detail and dedication to excellence are unmatched."</p>
                             <span>- John Smith, Founder of EcoRetail</span>
                         </div>
-                        <div className="testimonial">
+                        <div className={styles.testimonial}>
                             <p>"Seamless technology integration was exactly what we needed. PulseBytes made the entire process smooth and hassle-free. Amazing team!"</p>
                             <span>- Sarah Lee, Manager at EduConnect</span>
                         </div>
-                        <div className="testimonial">
+                        <div className={styles.testimonial}>
                             <p>"Working with PulseBytes has been a game-changer. Their innovative solutions and customer-centric approach are second to none. We’re thrilled with the results!"</p>
                             <span>- Michael Brown, Director of HealthCareNow</span>
                         </div>
                     </div>
                 </section>
-                <div className="our-process">
-                    <h2>Our Process</h2>
-                    <p>At PulseBytes, we follow a streamlined process to ensure that every project we undertake is a success. Here's how we bring your ideas to life:</p>
-                    <ol>
-                        <li>
-                            <div className="content">
-                                <h3>1. Discovery & Consultation</h3>
-                                <p>We begin by understanding your business needs, goals, and challenges. Through collaborative discussions, we gather insights to tailor our solutions to your requirements.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="content">
-                                <h3>2. Planning & Strategy</h3>
-                                <p>Our team crafts a comprehensive strategy and roadmap, ensuring every detail is accounted for to deliver exceptional results on time and within budget.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="content">
-                                <h3>3. Design & Development</h3>
-                                <p>Using cutting-edge tools and best practices, we design and develop solutions that are not only functional but also visually stunning and user-friendly.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="content">
-                                <h3>4. Testing & Quality Assurance</h3>
-                                <p>We rigorously test every aspect of the project to ensure it meets our high standards of quality, functionality, and security before deployment.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="content">
-                                <h3>5. Deployment & Launch</h3>
-                                <p>Once everything is perfected, we launch your project and ensure a seamless transition, providing training and support as needed.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="content">
-                                <h3>6. Ongoing Support & Optimization</h3>
-                                <p>Our partnership doesn't end at launch. We offer ongoing support, updates, and optimization to ensure your solutions continue to deliver value over time.</p>
-                            </div>
-                        </li>
-                    </ol>
-                </div>
-                <div className="just-images">
+                <section className={styles.processSection}>
+                    <div className={styles.ourProcess}>
+                        <h2>Our Process</h2>
+                        <p>At PulseBytes, we follow a streamlined process to ensure that every project we undertake is a success. Here's how we bring your ideas to life:</p>
+                        <ol>
+                            <li>
+                                <div className={styles.content}>
+                                    <h3>1. Discovery & Consultation</h3>
+                                    <p>We begin by understanding your business needs, goals, and challenges. Through collaborative discussions, we gather insights to tailor our solutions to your requirements.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div className={styles.content}>
+                                    <h3>2. Planning & Strategy</h3>
+                                    <p>Our team crafts a comprehensive strategy and roadmap, ensuring every detail is accounted for to deliver exceptional results on time and within budget.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div className={styles.content}>
+                                    <h3>3. Design & Development</h3>
+                                    <p>Using cutting-edge tools and best practices, we design and develop solutions that are not only functional but also visually stunning and user-friendly.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div className={styles.content}>
+                                    <h3>4. Testing & Quality Assurance</h3>
+                                    <p>We rigorously test every aspect of the project to ensure it meets our high standards of quality, functionality, and security before deployment.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div className={styles.content}>
+                                    <h3>5. Deployment & Launch</h3>
+                                    <p>Once everything is perfected, we launch your project and ensure a seamless transition, providing training and support as needed.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div className={styles.content}>
+                                    <h3>6. Ongoing Support & Optimization</h3>
+                                    <p>Our partnership doesn't end at launch. We offer ongoing support, updates, and optimization to ensure your solutions continue to deliver value over time.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <div className={styles.justImages}>
                     <img src="./src/assets/pbytes-values2.jpg" alt="pbytes image" /><img src="./src/assets/pbytes-values3.jpg" alt="" /><img src="./src/assets/pbytes-values4.jpg" alt="" /><img src="./src/assets/pbytes-values5.jpg" alt="" />
                 </div>
-                <section className="faq">
+                <section className={styles.faq}>
                     <h2>Frequently Asked Questions</h2>
                     {faqItems.map((item, index) => (
                         <div
                             key={index}
-                            className={`faq-item ${activeIndex === index ? 'active' : ''}`}
+                            className={`${styles.faqItem} ${activeIndex === index ? 'active' : ''}`}
                             onClick={() => handleToggle(index)}
                         >
-                            <h3 className="question">{item.question}</h3>
+                            <h3 className={styles.question}>{item.question}</h3>
                             {activeIndex === index && <p className="answer">{item.answer}</p>}
                         </div>
                     ))}
                 </section>
-
             </div>
             <Footer />
         </div>
