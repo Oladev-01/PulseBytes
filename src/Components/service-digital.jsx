@@ -13,7 +13,7 @@ const ServiceDigital = () => {
 
                 <div className="services-cards" >
                     <div className="service-card">
-                        <img src="./src/assets/seo.jpg" alt="SEO" className="service-icon" />
+                        <img src="assets/seo.jpg" alt="SEO" className="service-icon" />
                         <h3 className="service-title">SEO (Search Engine Optimization)</h3>
                         <p className="service-description">
                             Boost your online visibility and drive organic traffic to your website through expert SEO strategies, keyword optimization, and content marketing.
@@ -22,7 +22,7 @@ const ServiceDigital = () => {
                     </div>
 
                     <div className="service-card" >
-                        <img src="/src/assets/ppc.jpg" alt="PPC" className="service-icon" />
+                        <img src="/assets/ppc.jpg" alt="PPC" className="service-icon" />
                         <h3 className="service-title">PPC (Pay-Per-Click) Advertising</h3>
                         <p className="service-description">
                             Maximize your marketing budget with targeted ads on Google, Facebook, and other platforms, ensuring your brand reaches the right audience.
@@ -32,7 +32,7 @@ const ServiceDigital = () => {
 
                     {/* Social Media Marketing Card */}
                     <div className="service-card" id='service-card3'>
-                        <img src="./src/assets/ssm.jpg" alt="Social Media Marketing" className="service-icon" />
+                        <img src="/assets/ssm.jpg" alt="Social Media Marketing" className="service-icon" />
                         <h3 className="service-title">Social Media Marketing</h3>
                         <p className="service-description">
                             Engage and grow your audience through strategic social media campaigns across Facebook, Instagram, Twitter, and LinkedIn, designed to increase brand awareness and drive conversions.

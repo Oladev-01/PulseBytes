@@ -15,7 +15,7 @@ const VirtualAss = () => {
                 <div className="services-cards" >
                     {/* Administrative Support */}
                     <div className="service-card" >
-                        <img src="./src/assets/virtualass.jpg" alt="Administrative Support" className="service-icon" />
+                        <img src="/assets/virtualass.jpg" alt="Administrative Support" className="service-icon" />
                         <h3 className="service-title" >
                             Administrative Support
                         </h3>
@@ -27,7 +27,7 @@ const VirtualAss = () => {
 
                     {/* Social Media Management */}
                     <div className="service-card" >
-                        <img src="./src/assets/s-media.jpg" alt="Social Media Management" className="service-icon"  />
+                        <img src="/assets/s-media.jpg" alt="Social Media Management" className="service-icon"  />
                         <h3 className="service-title" >
                             Social Media Management
                         </h3>
@@ -39,7 +39,7 @@ const VirtualAss = () => {
 
                     {/* Customer Support */}
                     <div className="service-card" >
-                        <img src="./src/assets/c-support.jpg" alt="Customer Support" className="service-icon" />
+                        <img src="/assets/c-support.jpg" alt="Customer Support" className="service-icon" />
                         <h3 className="service-title" >
                             Customer Support
                         </h3>

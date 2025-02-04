@@ -17,7 +17,7 @@ export const Services = () => {
             <div className="service-body">
                 <div className="service-hero-section">
                     <video autoPlay loop muted playsInline>
-                        <source src="/src/assets/pbytes-service.mp4" type="video/mp4" />
+                        <source src="/assets/pbytes-service.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                     <div className="service-hero-text">

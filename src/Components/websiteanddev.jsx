@@ -15,7 +15,7 @@ const WebsiteAndDev = () => {
                 <div className="services-cards">
                     {/* Web Design Card */}
                     <div className="service-card">
-                        <img src="./src/assets/c-webdev.jpg" alt="Web Design" className="service-icon" />
+                        <img src="/assets/c-webdev.jpg" alt="Web Design" className="service-icon" />
                         <h3 className="service-title" style={{ fontSize: '24px', fontWeight: '600', color: '#333', marginBottom: '10px' }}>
                             Custom Web Design
                         </h3>
@@ -27,7 +27,7 @@ const WebsiteAndDev = () => {
 
                     {/* Web Development Card */}
                     <div className="service-card" >
-                        <img src="./src/assets/webdev.jpg" alt="Web Development" className="service-icon" />
+                        <img src="/assets/webdev.jpg" alt="Web Development" className="service-icon" />
                         <h3 className="service-title">
                             Web Development
                         </h3>
@@ -39,7 +39,7 @@ const WebsiteAndDev = () => {
 
                     {/* E-Commerce Development Card */}
                     <div className="service-card" >
-                        <img src="./src/assets/e-com.jpg" alt="E-Commerce Development" className="service-icon"  />
+                        <img src="/assets/e-com.jpg" alt="E-Commerce Development" className="service-icon"  />
                         <h3 className="service-title" >
                             E-Commerce Solutions
                         </h3>

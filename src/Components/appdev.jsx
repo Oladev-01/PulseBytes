@@ -16,7 +16,7 @@ const AppDev = () => {
                 <div className="services-cards" >
                     {/* Mobile App Design Card */}
                     <div className="service-card" >
-                        <img src="./src/assets/app-dev.png" alt="Mobile App Design" className="service-icon" />
+                        <img src="/assets/app-dev.png" alt="Mobile App Design" className="service-icon" />
                         <h3 className="service-title" >
                             Mobile App Design
                         </h3>
@@ -28,7 +28,7 @@ const AppDev = () => {
 
                     {/* Mobile App Development Card */}
                     <div className="service-card" >
-                        <img src="./src/assets/mobile-app.jpg" alt="Mobile App Development" className="service-icon" />
+                        <img src="/assets/mobile-app.jpg" alt="Mobile App Development" className="service-icon" />
                         <h3 className="service-title" >
                             Mobile App Development
                         </h3>
@@ -40,7 +40,7 @@ const AppDev = () => {
 
                     {/* Cross-Platform Development Card */}
                     <div className="service-card" >
-                        <img src="./src/assets/cross-pt.jpg" alt="Cross-Platform App" className="service-icon"/>
+                        <img src="/assets/cross-pt.jpg" alt="Cross-Platform App" className="service-icon"/>
                         <h3 className="service-title" >
                             Cross-Platform Apps
                         </h3>

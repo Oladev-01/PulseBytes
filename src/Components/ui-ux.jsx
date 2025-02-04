@@ -17,7 +17,7 @@ const UiUx = () => {
                 <div className="services-cards" >
                     {/* UX Research & Strategy */}
                     <div className="service-card" >
-                        <img src="./src/assets/ux.jpg" alt="UX Research & Strategy" className="service-icon" />
+                        <img src="/assets/ux.jpg" alt="UX Research & Strategy" className="service-icon" />
                         <h3 className="service-title" >
                             UX Research & Strategy
                         </h3>
@@ -29,7 +29,7 @@ const UiUx = () => {
 
                     {/* UI Design & Prototyping */}
                     <div className="service-card" >
-                        <img src="./src/assets/ui.jpg" alt="UI Design & Prototyping" className="service-icon" />
+                        <img src="/assets/ui.jpg" alt="UI Design & Prototyping" className="service-icon" />
                         <h3 className="service-title" >
                             UI Design & Prototyping
                         </h3>
@@ -41,7 +41,7 @@ const UiUx = () => {
 
                     {/* Usability Testing */}
                     <div className="service-card" >
-                        <img src="./src/assets/usability-test.jpg" alt="Usability Testing" className="service-icon" />
+                        <img src="/assets/usability-test.jpg" alt="Usability Testing" className="service-icon" />
                         <h3 className="service-title" >
                             Usability Testing
                         </h3>

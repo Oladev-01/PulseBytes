@@ -42,7 +42,7 @@ export const About = () => {
             <Nav />
             <div className={styles.serviceBody}>
                 <div className={styles.aboutHeader}>
-                    <img src="./src/assets/pbytes-abt.jpg" alt="About PulseBytes" />
+                    <img src="/assets/pbytes-abt.jpg" alt="About PulseBytes" />
                     <div className={styles.abtHero}>
                         <h1>About Us</h1>
                         <p>
@@ -94,7 +94,7 @@ export const About = () => {
                                 <li><strong>Adaptability:</strong> Our solutions are flexible, scalable, and designed to meet the dynamic needs of diverse industries.</li>
                                 <li><strong>Integrity:</strong> We uphold transparency, honesty, and professionalism in every project we undertake.</li>
                             </ul>
-                            <img src='./src/assets/pbytes-value1.jpg' alt='PulseBytes Core Values image' />
+                            <img src='/assets/pbytes-value1.jpg' alt='PulseBytes Core Values image' />
                         </div>
 
                     </div>
@@ -165,7 +165,7 @@ export const About = () => {
                     </div>
                 </section>
                 <div className={styles.justImages}>
-                    <img src="./src/assets/pbytes-values2.jpg" alt="pbytes image" /><img src="./src/assets/pbytes-values3.jpg" alt="" /><img src="./src/assets/pbytes-values4.jpg" alt="" /><img src="./src/assets/pbytes-values5.jpg" alt="" />
+                    <img src="/assets/pbytes-values2.jpg" alt="pbytes image" /><img src="/assets/pbytes-values3.jpg" alt="" /><img src="/assets/pbytes-values4.jpg" alt="" /><img src="/assets/pbytes-values5.jpg" alt="" />
                 </div>
                 <section className={styles.faq}>
                     <h2>Frequently Asked Questions</h2>
