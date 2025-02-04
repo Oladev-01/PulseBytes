@@ -1,0 +1,175 @@
+.first-half {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.first-half-left span {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.first-half-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 250px;
+    width: 45%;
+    height: 100%;
+}
+
+
+.first-half p {
+    width: 100%;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.7rem;
+    letter-spacing: 2px;
+}
+
+video {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    z-index: 0;
+    right: 0;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1224px) {
+    .first-half-left span {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .first-half-left {
+        gap: 180px;
+    }
+    .first-half-left p {
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .first-half {
+        flex-direction: column;
+        align-items: start;
+        text-align: start;
+        gap: 40px;
+        padding: 10px 15px;
+    }
+
+    .first-half-left {
+        width: 80%;
+        gap: 150px;
+        align-items: start;
+        padding: 0;
+    }
+
+    .first-half-left span {
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    .first-half p {
+        font-size: 24px;
+        letter-spacing: 2.5px;
+        font-weight: 400;
+
+    }
+
+    video {
+        width: 80%;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .first-half-left {
+        width: 90%;
+        gap: 100px;
+        padding: 0;
+    }
+
+    .first-half-left span {
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+
+    .first-half p {
+        line-height: 2rem;
+        font-size: 24px;
+        letter-spacing: 2.5px;
+        font-weight: 400;
+    }
+
+    video {
+        width: 90%;
+        margin-top: 77px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .first-half {
+        padding: 20px 10px;
+        gap: 30px;
+    }
+
+    .first-half-left {
+        width: 100%;
+        gap: 50px;
+    }
+
+    .first-half-left span {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .first-half p {
+        line-height: 2rem;
+        font-size: 22px;
+        letter-spacing: 2.5px;
+        /* letter-spacing: 0.5px; */
+        font-weight: 400;
+    }
+
+    video {
+        width: 95%;
+        margin-top: 75px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .first-half {
+        padding: 15px 15px;
+        gap: 20px;
+        text-align: start;
+        margin-top: 0;
+    }
+
+    .first-half-left {
+        width: 100%;
+        gap: 30px;
+        text-align: start;
+    }
+
+    .first-half-left span {
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+    .first-half p {
+        font-size: 18px;
+        letter-spacing: 2px;
+        line-height: 1.7rem;
+        font-weight: 600;
+    }
+
+    video {
+        width: 100%;
+        margin-top: 70px;
+    }
+}

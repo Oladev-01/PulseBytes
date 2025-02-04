@@ -7,7 +7,11 @@ const ContactBody = () => {
     const form = useRef();
     const year = new Date().getFullYear();
     const [CaptchValue, setCaptchValue] = useState('');
-
+    const sitekey = import.meta.env.VITE_SITEKEY;
+    const serviceId = import.meta.env.VITE_SERVICEID;
+    const templateId = import.meta.env.VITE_TEMPLATEID;
+    const userId = import.meta.env.VITE_USERID;
+    
     const handleCaptcha = (value) => {
         setCaptchValue(value);
     }
@@ -20,9 +24,7 @@ const ContactBody = () => {
         }
 
         emailjs
-            .sendForm('service_3askm4c', 'template_s6zfd1v', form.current, '_sc5WM0UlPzYWsn3b', {
-                year: year
-            })
+            .sendForm(serviceId, templateId, form.current, userId)
             .then(
                 (result) => {
                     console.log(result.text);
@@ -63,10 +65,12 @@ const ContactBody = () => {
                     <label htmlFor="message">Message</label>
                     <textarea id="message" name='message' placeholder="Tell us more about your project" required></textarea>
 
-                    <ReCAPTCHA
-                        sitekey="6Ld1tMkqAAAAAHWZgYnOlAKIgsVCqFRJYZVmYF_M"
-                        onChange={handleCaptcha}
-                    />
+                    <div className="recaptcha-container">
+                        <ReCAPTCHA
+                            sitekey={sitekey}
+                            onChange={handleCaptcha}
+                        />
+                    </div>
                     <button type="submit">Send Message</button>
                 </form>
             </section>

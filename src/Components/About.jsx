@@ -127,37 +127,37 @@ export const About = () => {
                         <ol>
                             <li>
                                 <div className={styles.content}>
-                                    <h3>1. Discovery & Consultation</h3>
+                                    <h3>Discovery & Consultation</h3>
                                     <p>We begin by understanding your business needs, goals, and challenges. Through collaborative discussions, we gather insights to tailor our solutions to your requirements.</p>
                                 </div>
                             </li>
                             <li>
                                 <div className={styles.content}>
-                                    <h3>2. Planning & Strategy</h3>
+                                    <h3>Planning & Strategy</h3>
                                     <p>Our team crafts a comprehensive strategy and roadmap, ensuring every detail is accounted for to deliver exceptional results on time and within budget.</p>
                                 </div>
                             </li>
                             <li>
                                 <div className={styles.content}>
-                                    <h3>3. Design & Development</h3>
+                                    <h3>Design & Development</h3>
                                     <p>Using cutting-edge tools and best practices, we design and develop solutions that are not only functional but also visually stunning and user-friendly.</p>
                                 </div>
                             </li>
                             <li>
                                 <div className={styles.content}>
-                                    <h3>4. Testing & Quality Assurance</h3>
+                                    <h3>Testing & Quality Assurance</h3>
                                     <p>We rigorously test every aspect of the project to ensure it meets our high standards of quality, functionality, and security before deployment.</p>
                                 </div>
                             </li>
                             <li>
                                 <div className={styles.content}>
-                                    <h3>5. Deployment & Launch</h3>
+                                    <h3>Deployment & Launch</h3>
                                     <p>Once everything is perfected, we launch your project and ensure a seamless transition, providing training and support as needed.</p>
                                 </div>
                             </li>
                             <li>
                                 <div className={styles.content}>
-                                    <h3>6. Ongoing Support & Optimization</h3>
+                                    <h3>Ongoing Support & Optimization</h3>
                                     <p>Our partnership doesn't end at launch. We offer ongoing support, updates, and optimization to ensure your solutions continue to deliver value over time.</p>
                                 </div>
                             </li>

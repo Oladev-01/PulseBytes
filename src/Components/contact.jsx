@@ -5,7 +5,7 @@ import ContactBody from "./contact-body";
 
 const Contact = () => {
     return (
-        <div className="contact" style={{background: 'red', margin: '0', padding: '0'}}>    
+        <div className="contact" >    
             <Nav isContact={true}/>
             < ContactBody/>
             <Footer></Footer>

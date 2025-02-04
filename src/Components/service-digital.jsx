@@ -4,14 +4,14 @@ import '../styles/service-digital.css'
 
 const ServiceDigital = () => {
     return (
-        <section className="service-page digital-marketing" style={{ backgroundColor: '#f5f5f5', padding: '80px 0' }}>
-            <div className="container">
+        <section className="services-container digital-marketing" style={{ backgroundColor: '#f5f5f5', padding: '80px 0' }}>
+            <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
                 <h2 className="section-title">Digital Marketing Services</h2>
                 <p className="section-description">
                     Our digital marketing services are designed to help your business grow online. From SEO to social media marketing, we tailor strategies to meet your goals and maximize ROI.
                 </p>
 
-                <div className="services-cards">
+                <div className="services-cards" >
                     <div className="service-card">
                         <img src="./src/assets/seo.jpg" alt="SEO" className="service-icon" />
                         <h3 className="service-title">SEO (Search Engine Optimization)</h3>
@@ -21,7 +21,7 @@ const ServiceDigital = () => {
                         <Link to="/contact" className="service-link">Contact us</Link>
                     </div>
 
-                    <div className="service-card">
+                    <div className="service-card" >
                         <img src="/src/assets/ppc.jpg" alt="PPC" className="service-icon" />
                         <h3 className="service-title">PPC (Pay-Per-Click) Advertising</h3>
                         <p className="service-description">
@@ -31,7 +31,7 @@ const ServiceDigital = () => {
                     </div>
 
                     {/* Social Media Marketing Card */}
-                    <div className="service-card">
+                    <div className="service-card" id='service-card3'>
                         <img src="./src/assets/ssm.jpg" alt="Social Media Marketing" className="service-icon" />
                         <h3 className="service-title">Social Media Marketing</h3>
                         <p className="service-description">

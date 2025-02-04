@@ -13,11 +13,11 @@
     gap: 400px;
 }
 
-.project-nav li {
+.project-nav li, .contact-nav li {
     list-style: none;
 }
 
-.project-nav a {
+.project-nav a, .contact-nav a {
     text-decoration: none;
     color: var(--color-light);
 }
@@ -84,4 +84,113 @@
 
 #hidden-contact {
     display: none;
+}
+
+/* Tablets and smaller laptops (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .contact-nav {
+        gap: 200px;
+    }
+
+    .pulse-bytes {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #navlink {
+        gap: 40px;
+        font-size: 16px;
+    }
+
+    #contact {
+        padding: 15px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-nav{
+        gap: 200px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .project-nav, .contact-nav {
+        padding: 15px;
+    }
+
+    #navlink {
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-dark);
+        align-items: center;
+        padding: 20px 0;
+        display: none;
+    }
+
+    #navlink li {
+        margin: 10px 0;
+    }
+
+    #navlink li a {
+        font-size: 18px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+
+    }
+    .contact-nav #navlink {
+        align-items: center;
+    }
+    .contact-nav #navlink li a {
+        padding: 0;
+        border-radius: 0;
+        background-color: inherit;
+        color: var(--color-light);
+        font-weight: 300;
+    }
+    .contact-nav #navlink li a:hover {
+        background-color: inherit;
+        color: gold;
+    }
+
+    .menu .menu-item {
+        width: 35px;
+        height: 1px;
+        background-color: var(--color-light);
+        margin: 5px 0;
+    }
+
+    /* Toggle visibility when menu is clicked */
+    #navlink.hidden {
+        display: flex;
+        width: 100%;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    #hidden-contact {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pulse-bytes {
+        font-size: 22px;
+    }
+
+    #navlink li a {
+        font-size: 16px;
+    }
+
+    .menu .menu-item {
+        width: 25px;
+    }
 }

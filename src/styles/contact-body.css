@@ -216,3 +216,127 @@ iframe {
     color: #555;
     margin-top: 8px;
 }
+
+@media screen and (max-width: 900px) {
+    .hero-section h1 {
+        font-size: 2.3rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+    .cta-button {
+        font-size: 0.9rem;
+    }
+    .contact-form-section {
+        width: 700px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact-form-section h2 {
+        font-size: 2rem;
+
+    }
+
+    .contact-form-section p {
+        font-size: 1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    form label {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    form textarea {
+        min-height: 120px;
+    }
+
+    form button {
+        font-size: 1rem;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+/* Further adjust for smaller screens like mobile phones */
+@media screen and (max-width: 800px) {
+    .contact-form-section {
+        width: 600px;
+        padding: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 680px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .cta-button {
+        font-size: 0.7rem;
+        padding: 10px 15px;
+    }
+    .contact-form-section {
+        width: 500px;
+        padding: 15px;
+    }
+    .contact-form-section h2 {
+        font-size: 1.4rem;
+    }
+    .contact-form-section p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+    .hero-section p {
+        font-size: 0.8rem;
+    }
+    .contact-form-section {
+        width: 450px;
+        padding: 14px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .contact-form-section {
+        width: 300px;
+        padding: 15px;
+    }
+    .contact-form-section h2 {
+        color: red;
+    }
+    form textarea {
+        height: 80px;
+    }
+
+    form select option{
+        font-size: 0.5rem;
+    }
+    .recaptcha-container {
+        transform: scale(0.75);
+        transform-origin: center;
+    }
+    .contact-info h2 {
+        font-size: 1.5rem;
+    }
+}

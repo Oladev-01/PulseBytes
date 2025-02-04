@@ -82,3 +82,112 @@
     align-items: center;
     gap: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+    .footers {
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer-service span, .footer-contact span, .footer-media span {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .footer-service, .footer-media, .footer-contact {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: start;
+        gap: 10px;
+    }
+    .footer-service ul, .footer-media ul, .footer-contact ul {
+        gap: 10px;
+    }
+    .footer-bottom {
+        text-align: start;
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .footer-bottom ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footers {
+        gap: 40px;
+        text-align: start;
+    }
+
+    .footer-service, .footer-media, .footer-contact {
+        align-items: start;
+        width: 100%;
+    }
+
+    .footers ul {
+        align-items: start;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: start;
+        align-items: start;
+
+    }
+
+    .footer-bottom ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footers-hold {
+        padding: 25px 15px;
+    }
+
+    .footers {
+        gap: 40px;
+    }
+
+    .footer-service, .footer-media, .footer-contact {
+        font-size: 16px;
+    }
+
+    .footers ul {
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+        text-align: start;
+        align-items: start;
+    }
+
+    .footer-bottom ul {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footers-hold {
+        padding: 20px 10px;
+    }
+
+    .footers {
+        gap: 40px;
+    }
+
+    .footer-service, .footer-media, .footer-contact {
+        font-size: 15px;
+    }
+
+    .footer-bottom {
+        font-size: 13px;
+    }
+}

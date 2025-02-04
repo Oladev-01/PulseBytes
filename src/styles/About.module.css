@@ -1,5 +1,6 @@
 .serviceBody {
     margin: 0;
+    width: 100%;
 }
 
 .aboutHeader {
@@ -20,7 +21,7 @@
 
 .abtHero {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 45%;
     transform: translate(-50%, 30%);
     color: white;
@@ -40,9 +41,11 @@
     padding: 0;
     text-align: start;
 }
+
 .abtHero p {
     text-align: start;
 }
+
 .abtHero span a {
     border-radius: 8px;
     text-decoration: none;
@@ -51,9 +54,11 @@
     color: black;
     transition: background-color 0.5s ease;
 }
+
 .abtHero span a:hover {
     background-color: rgba(81, 241, 253, 0.952);
 }
+
 .abtHero span {
     margin-top: 30px;
 }
@@ -69,14 +74,17 @@
     padding: 40px 20px;
     width: 100%;
 }
+
 .abtHistory h2 {
     font-weight: 700;
     margin-bottom: 0;
 }
+
 .abtHistory p {
     font-weight: 500;
     margin-top: 0;
 }
+
 .abtHistory p:nth-of-type(1) {
     margin-top: 20px;
 }
@@ -84,14 +92,15 @@
 .abtHistoryMission {
     margin-top: 60px;
     display: flex;
-    align-items: flex-start; 
-    justify-content: flex-start; 
-    gap: 30px; /* Add some space between the line bar and the content */
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    /* Add some space between the line bar and the content */
 }
 
 .lineBar {
     width: 15px;
-    height: 200px; 
+    height: 200px;
     background-color: red;
     margin-top: 0;
     align-items: flex-start;
@@ -109,20 +118,20 @@
 }
 
 .historyMission p {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #333; 
-    line-height: 1.5; 
+    color: #333;
+    line-height: 1.5;
     text-align: start;
-    transform: translateY(-25px); 
+    transform: translateY(-25px);
 }
 
 .historyMission span a {
     font-size: 1.1rem;
-    color: white; 
+    color: white;
     padding: 10px 20px;
     background-color: red;
-    text-decoration: none; 
+    text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
 }
@@ -139,15 +148,18 @@
     flex-direction: column;
     padding: 80px 20px;
 }
+
 li {
     list-style: none;
 }
+
 .abtMission h2 {
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 2px;
     margin-bottom: 0;
 }
+
 .abtMission p {
     font-weight: 400;
     font-size: 18px;
@@ -171,12 +183,13 @@ li {
     margin-top: 30px;
     width: 50%;
 }
+
 .abtMissionValues li {
     text-align: start;
     font-weight: 500;
 }
 
-.core-values strong {
+.coreValues strong {
     font-weight: 600;
     font-size: 17px;
     letter-spacing: 2px;
@@ -185,12 +198,12 @@ li {
 .coreValues {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .coreValues img {
     width: 40%;
     height: 40%;
-    transform: translateY(50px);
 }
 
 
@@ -198,50 +211,52 @@ li {
     text-align: center;
     padding: 50px 20px;
     background-color: #f9f9f9;
-  }
-  
-  .testimonials h2 {
+}
+
+.testimonials h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #333;
-  }
-  
-  .testimonialContainer {
+}
+
+.testimonialContainer {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-  }
-  
-  .testimonial {
+}
+
+.testimonial {
     max-width: 600px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .testimonial p {
+}
+
+.testimonial p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 10px;
-  }
-  
-  .testimonial span {
+}
+
+.testimonial span {
     font-size: 0.9rem;
     color: #777;
     font-style: italic;
-  }
-  .processSection {
+}
+
+.processSection {
     width: 100%;
     background-color: rgb(184, 180, 180);
     align-items: center;
     display: flex;
     justify-content: center;
     padding: 40px;
-  }
-  .ourProcess {
+}
+
+.ourProcess {
     margin: 0;
     max-width: 800px;
     padding: 1rem;
@@ -335,6 +350,7 @@ li {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .ourProcess ol li:hover .content {
@@ -346,26 +362,25 @@ li {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     background-color: var(--color-dark);
+    align-items: center;
     padding: 40px;
 }
 
 .justImages img {
-    width: 30%;  
-    height: 200px;  
-    object-fit: cover;  
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
 }
-.justImages img:nth-child(4){
-    transform: translateX(90%);
-}
+
 
 .faq {
-
     width: 100%;
     background-color: #f4f4f4;
     text-align: center;
     color: black;
+    padding: 30px;
     font-weight: 600;
 }
 
@@ -380,6 +395,7 @@ li {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
 .faqItem h3.question {
@@ -397,7 +413,7 @@ li {
 .faqItem p.answer {
     font-size: 1rem;
     color: #555;
-    display: none; 
+    display: none;
     margin-top: 10px;
 }
 
@@ -414,7 +430,7 @@ li {
 }
 
 .faqItem.active h3.question::after {
-    transform: rotate(45deg); 
+    transform: rotate(45deg);
 }
 
 .faqItem h3.question::before {
@@ -429,13 +445,260 @@ li {
     display: inline;
 }
 
-.faq {
-    margin: 0; 
-    padding: 0;
-}
 
 .about {
     gap: 0;
     display: flex;
     flex-direction: column;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .ourProcess {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    .abtHero span a {
+        font-size: 20px;
+    }
+
+    .abtHero p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .abtHistory p {
+        margin-bottom: 20px;
+    }
+
+    .historyMission {
+        gap: 10px;
+    }
+
+    .historyMission p {
+        font-size: 1.3rem;
+    }
+
+    .lineBar {
+        height: 180px;
+    }
+
+    .abtMission h2 {
+        margin-bottom: 15px;
+    }
+
+    .ourProcess ol li::before {
+        left: 10px;
+    }
+
+    .abtMission {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .abtMission h2 {
+        margin-bottom: 15px;
+    }
+
+    .abtMission p {
+        text-align: start;
+        line-height: 2rem;
+    }
+
+    .coreValues {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .abtMissionValues {
+        align-items: center;
+        text-align: start;
+    }
+
+    .abtMissionValues ul {
+        text-align: start;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .abtMissionValues li {
+        text-align: start;
+    }
+
+    .coreValues img {
+        width: 100%;
+    }
+    .faqItem h3.question {
+        font-size: 1.2rem;
+    }
+    .ourProcess ol li::after {
+        left: 3px;
+    }
+
+    .ourProcess ol li .content {
+        margin-left: 2rem;
+        padding: 0.8rem;
+
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .aboutHeader {
+        height: auto;
+    }
+
+    .aboutHeader img {
+        height: 400px;
+    }
+
+    .abtHero {
+        top: 4%;
+        padding: auto 0;
+    }
+
+    .abtHero p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .abtHero h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+
+    .abtHero span a {
+        font-size: 20px;
+    }
+
+    .abtHistory p {
+        margin-bottom: 20px;
+    }
+
+    .historyMission {
+        gap: 8px;
+    }
+
+    .historyMission p {
+        font-size: 1rem;
+    }
+
+    .lineBar {
+        height: 200px;
+    }
+
+    .abtMission {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .abtMission h2 {
+        margin-bottom: 15px;
+    }
+
+    .abtMission p {
+        text-align: start;
+        line-height: 2rem;
+    }
+
+    .ourProcess {
+        background-color: inherit;
+    }
+
+    .ourProcess h2 {
+        color: rgb(39, 39, 39);
+    }
+
+    .ourProcess p {
+        color: rgb(82, 73, 73);
+        font-size: 20px;
+    }
+
+    .justImages {
+        height: auto;
+        padding: 0 0;
+    }
+
+    .justImages img {
+        height: 150px;
+        width: 100%;
+    }
+
+    .justImages img:nth-child(4) {
+        transform: translateX(0%);
+    }
+
+    .faq h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile Devices (max-width: 767px) - Single column layout */
+@media screen and (max-width: 767px) {
+    .processSection {
+        padding: 30px 20px;
+    }
+
+    .ourProcess {
+        width: 100%;
+        padding: 1rem;
+
+    }
+
+    .ourProcess h2 {
+        font-size: 2rem;
+    }
+
+    .ourProcess p {
+        font-size: 16px;
+        margin-bottom: 1.5rem;
+    }
+
+    .ourProcess ol li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ourProcess ol li::before {
+        display: none;
+        /* Remove vertical line */
+    }
+
+    .ourProcess ol li::after {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+    }
+
+    .ourProcess ol li .content {
+        margin-left: 0;
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .ourProcess h2 {
+        font-size: 1.8rem;
+    }
+
+    .ourProcess p {
+        font-size: 15px;
+    }
+
+    .ourProcess ol li .content {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .ourProcess ol li::after {
+        display: none;
+    }
+}
+
+/* Small Mobile (max-width: 480px) - Adjust spacing and font sizes */
+@media (max-width: 480px) {}
