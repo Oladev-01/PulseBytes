@@ -11,7 +11,7 @@ const ContactBody = () => {
     const serviceId = import.meta.env.VITE_SERVICEID;
     const templateId = import.meta.env.VITE_TEMPLATEID;
     const userId = import.meta.env.VITE_USERID;
-    
+    console.log("Site Key:", import.meta.env.VITE_SITEKEY);
     const handleCaptcha = (value) => {
         setCaptchValue(value);
     }
