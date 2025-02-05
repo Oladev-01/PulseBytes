@@ -319,7 +319,7 @@ iframe {
 
 @media screen and (max-width: 400px) {
     .contact-form-section {
-        width: 300px;
+        width: 350px;
         padding: 15px;
     }
     .contact-form-section h2 {

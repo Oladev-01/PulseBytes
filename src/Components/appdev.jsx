@@ -4,9 +4,9 @@ import '../styles/service-digital.css';
 
 const AppDev = () => {
     return (
-        <section className="service app-design-development" style={{ backgroundColor: '#f5f5f5', padding: '80px 0' }}>
+        <section className="service app-design-development" style={{ backgroundColor: '#f5f5f5', padding: '80px 0' }} id='app-section'>
             <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
-                <h2 className="section-title" style={{ fontSize: '36px', fontWeight: '700', color: 'var(--color-dark)', textAlign: 'center', marginBottom: '20px' }}>
+                <h2 className="section-title" >
                     App Design & Development Services
                 </h2>
                 <p className="section-description" style={{ fontSize: '18px', textAlign: 'center', color: 'gray', marginBottom: '40px', fontWeight: '600' }}>

@@ -9,6 +9,7 @@
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .section-description {
@@ -86,7 +87,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .services-cards {
       justify-content: center;
   }
@@ -96,7 +97,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .services-container {
       padding: 50px 20px;
   }
@@ -115,3 +116,9 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+}

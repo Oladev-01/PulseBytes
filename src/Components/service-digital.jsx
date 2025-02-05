@@ -4,7 +4,7 @@ import '../styles/service-digital.css'
 
 const ServiceDigital = () => {
     return (
-        <section className="services-container digital-marketing" style={{ backgroundColor: '#f5f5f5', padding: '80px 0' }}>
+        <section className="services-container digital-marketing" style={{ backgroundColor: '#f5f5f5', padding: '80px 0' }} id='service-digital'>
             <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
                 <h2 className="section-title">Digital Marketing Services</h2>
                 <p className="section-description">

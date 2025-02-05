@@ -1,7 +1,7 @@
 /* General Container (Background) */
 .services-section-container {
     padding: 50px;
-    background-color: var(--color-dark); /* Alice Blue - Light, calming blue */
+    background-color: gray; /* Alice Blue - Light, calming blue */
     text-align: center;
     color: hsl(0, 0%, 20%);
     margin: 0;

@@ -29,10 +29,12 @@
     font-weight: 600;
     text-align: center;
     display: flex;
+    background: linear-gradient(135deg, rgba(62, 62, 62, 0.8), rgba(144, 142, 142, 0.8));
     width: 80%;
     flex-direction: column;
     align-items: start;
-    padding: 0;
+    padding: 8px 10px;
+    border-radius: 8px;
     border-radius: 8px;
 }
 
@@ -95,7 +97,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 30px;
-    /* Add some space between the line bar and the content */
 }
 
 .lineBar {
@@ -701,4 +702,8 @@ li {
 }
 
 /* Small Mobile (max-width: 480px) - Adjust spacing and font sizes */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .abtHistoryMission {
+        margin-top: 50px;
+    }
+}

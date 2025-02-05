@@ -1,13 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import '../styles/service-digital.css';
 
 
 const UiUx = () => {
+
     return (
-        <section className="service ui-ux-design" style={{ backgroundColor: '#f8f9fa', padding: '80px 0' }}>
+        <section className="service ui-ux-design" style={{ backgroundColor: '#f8f9fa', padding: '80px 0' }} id='uiux-section'>
             <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
-                <h2 className="section-title" style={{ fontSize: '36px', fontWeight: '700', color: '#333', textAlign: 'center', marginBottom: '20px' }}>
+                <h2 className="section-title" >
                     UI/UX Design Services
                 </h2>
                 <p className="section-description" style={{ fontSize: '18px', textAlign: 'center', color: 'gray', marginBottom: '40px', fontWeight: '600' }}>

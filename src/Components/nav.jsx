@@ -4,7 +4,7 @@ import '../styles/nav.css';
 
 
 export const Nav = ({ isContact }) => {
-    const [isHidden, setIsHidden] = useState(true);
+    const [isHidden, setIsHidden] = useState(false);
 
     const toggleMenu = () => {
         setIsHidden(!isHidden);

@@ -3,9 +3,9 @@ import '../styles/service-digital.css'
 
 const WebsiteAndDev = () => {
     return (
-        <section className="service website-design-development" style={{ backgroundColor: 'var(--color-light)', padding: '80px 0' }}>
+        <section className="service website-design-development" style={{ backgroundColor: 'var(--color-light)', padding: '80px 0' }} id='website-section'>
             <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
-                <h2 className="section-title" style={{ fontSize: '36px', fontWeight: '700', color: '#333', textAlign: 'center', marginBottom: '20px' }}>
+                <h2 className="section-title" >
                     Website Design & Development Services
                 </h2>
                 <p className="section-description" style={{ fontSize: '18px', textAlign: 'center', color: 'gray', marginBottom: '40px', fontWeight: '600' }}>

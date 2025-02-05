@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Nav } from './nav'
 import { Footer } from './footer'
 import '../styles/service.css'
@@ -9,8 +9,21 @@ import WebsiteAndDev from "./websiteanddev";
 import AppDev from "./appdev";
 import UiUx from "./ui-ux";
 import VirtualAss from "./virtual-ass";
+import Ecommerce from "./e-commerce";
 
 export const Services = () => {
+    const location = useLocation()
+    useEffect(() => {
+        if (location.hash) {
+            const sectionId = location.hash.slice(1);
+        }
+        setTimeout(() => {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 300)
+    }, [location]);
     return (
         <div className="services-body">
             <Nav />
@@ -26,6 +39,7 @@ export const Services = () => {
                     </div>
                 </div>
                 <ServicesSection />
+                <Ecommerce />
                 <ServiceDigital />
                 <WebsiteAndDev />
                 <AppDev />

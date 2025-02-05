@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/footer.css';
 
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
+    const navigate = useNavigate();
+    const handleUiNavigation = (sectionId) => {
+        navigate(`/services#${sectionId}`);
+
+        setTimeout(() => {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 300);
+    }
+
 
     return (
         <footer>
@@ -12,12 +24,12 @@ export const Footer = () => {
                 <div className="footer-service">
                     <span>Services</span>
                     <ul>
-                        <li><Link to="/e-commerce">E-commerce</Link></li>
-                        <li><Link to="">UI/UX Design</Link></li>
-                        <li><Link to="">Digital Marketing</Link></li>
-                        <li><Link to="">App Development</Link></li>
-                        <li><Link to="">Virtual Assistant</Link></li>
-                        <li><Link to="">Website Design</Link></li>
+                        <li onClick={() => handleUiNavigation("ecommerce-section")}><Link to="">E-commerce</Link></li>
+                        <li onClick={() => handleUiNavigation("uiux-section")}><Link to="#" >UI/UX Design</Link></li>
+                        <li onClick={() => handleUiNavigation("service-digital")}><Link to="">Digital Marketing</Link></li>
+                        <li onClick={() => handleUiNavigation("app-section")}><Link to="">App Development</Link></li>
+                        <li onClick={() => handleUiNavigation("virtual-section")}><Link to="">Virtual Assistant</Link></li>
+                        <li onClick={() => handleUiNavigation("website-section")}><Link to="">Website Design</Link></li>
                     </ul>
                 </div>
                 <div className="footer-media">

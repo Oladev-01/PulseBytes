@@ -3,9 +3,9 @@ import '../styles/service-digital.css'
 
 const VirtualAss = () => {
     return (
-        <section className="service virtual-assistant" style={{ backgroundColor: '#eef5f9', padding: '80px 0' }}>
+        <section className="service virtual-assistant" style={{ backgroundColor: '#eef5f9', padding: '80px 0' }} id='virtual-section'>
             <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
-                <h2 className="section-title" style={{ fontSize: '36px', fontWeight: '700', color: '#333', textAlign: 'center', marginBottom: '20px' }}>
+                <h2 className="section-title" >
                     Virtual Assistant Services
                 </h2>
                 <p className="section-description" style={{ fontSize: '18px', textAlign: 'center', color: 'gray', marginBottom: '40px', fontWeight: '600'}}>
